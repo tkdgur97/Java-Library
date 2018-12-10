@@ -12,6 +12,7 @@ import javax.swing.JTextField;
 
 import admin.AdminJFrame;
 import member.MemberJFrame;
+import tcpserver.TCPClient1;
 import user.UserJFrame;
 
 import javax.swing.JPasswordField;
@@ -107,7 +108,12 @@ public class MainJFrame extends JFrame implements ActionListener {
 			String pw = pwField.getText();
 			if (id.equals("admin") && pw.equals("1234")) {
 				setVisible(false);
-				new AdminJFrame();
+				try {
+					new AdminJFrame();
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			} else {
 				String result = new TCPClient1().loginCheck(id + "\n" + pw);
 				System.out.println(result);

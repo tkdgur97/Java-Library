@@ -14,7 +14,7 @@ import java.util.Random;
 
 import javax.swing.JTextField;
 
-import main.TCPClient1;
+import tcpserver.TCPClient1;
 
 import javax.swing.JPasswordField;
 import javax.swing.JButton;

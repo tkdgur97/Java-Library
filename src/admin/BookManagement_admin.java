@@ -3,6 +3,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
+
+import test.BookRegister_admin;
+
 import javax.swing.JButton;
 
 public class BookManagement_admin extends JFrame implements ActionListener  {
@@ -48,7 +51,7 @@ public class BookManagement_admin extends JFrame implements ActionListener  {
 		}else if(e.getSource()==bookRemove) {
 			
 		}else if(e.getSource()==bookUpdate) {
-			new BookUpdateSearch_admin();
+//			new BookUpdateSearch_admin();
 		}else if(e.getSource()==memberMangement) {
 			
 		}

@@ -10,6 +10,9 @@ import javax.swing.JTabbedPane;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextField;
+
+import tcpserver.TCPClient1;
+
 import javax.swing.JButton;
 
 public class Id_PwFindJFrame extends JFrame implements ActionListener {
